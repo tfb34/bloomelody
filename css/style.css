@@ -4,6 +4,7 @@
 
 :root{
     --primary-color: #0B57AD;
+    --primary-light-color: #E7F4FE;
     --secondary-color: yellow;
 }
 
@@ -13,55 +14,21 @@
     box-sizing: border-box ;
     padding:0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     color:#0A264F;
     font-family: 'Inter', sans-serif;
 }
-h1{
-    font-size: 54px;
-    font-weight: 700;
-    line-height: 65px;
-}
-h2{
-    font-size: 48px;
-    font-weight: 600;
-    line-height: 42px;
+
+h4{
+    color: #175293;
 }
 h3{
-    font-size: 28px;
-    font-weight: 600;
-    line-height: 42px;
-}
-h4{
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 42px;
+    color: #0A264F;
 }
 
-.subtitle-1{
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19.36px;
-}
-.subtitle-2{
-    font-size: 16px;
-    font-weight: 400;
-}
-.header-text{
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 19.36px;
-}
-.body1-text{
-    font-size: 21px;
-    line-height: 48px;
-    font-weight: 500;
-}
-.body2-text{
-    font-size: 21px;
-    line-height: 42px;
-    font-weight: 400;
-}
 
 ul{
     list-style: none;
@@ -105,6 +72,67 @@ a{
     margin-top: 90px;
 }
 
+
+/*showcase*/
+.showcase{
+    background: var(--primary-color);
+    color:#fff;
+    padding-top:40px;
+    padding-bottom:40px;
+    height: 100%;
+    max-height: 900px;
+}
+.showcase-text p{
+    margin-top: 2em;
+}
+.showcase-text .red-underline{
+    border-bottom: 3px solid #FF3A44;
+}
+
+.showcase-text .yellow-underline{
+    border-bottom:  3px solid #F6BB00;
+}
+.showcase-text .green-underline{
+    border-bottom: 3px solid #1EB742;
+}
+.showcase-text .blue-underline{
+    border-bottom:  5px solid #3D95F7;
+}
+.showcase-text img{
+    margin:2em 0;
+    width: 100%;
+    max-width: 260px;
+}
+.showcase-pic{
+    text-align: right;
+    transform: translateY(125px);
+}
+
+/* ABOUT  */
+section.about{
+    background: var(--primary-light-color);
+}
+.about .container{
+    padding-top: 100px;
+}
+
+.about > div {
+    text-align: center;
+}
+
+.about .text{
+    margin-top: 2em;
+}
+.about  h1{
+    color: #1662FA;
+}
+.about .container > div{
+    padding: 40px 0;
+}
+.about .text span{
+    color: #1662FA;
+}
+
 @media only screen and (max-width: 425px){
     .navbar img{
         width: 30vw;
@@ -135,44 +163,8 @@ a{
    
 }
 
-
-
-/*showcase*/
-.showcase{
-    background: var(--primary-color);
-    color:#fff;
-    padding-top:40px;
-    padding-bottom:40px;
-    height: 100%;
-    max-height: 900px;
-}
-.showcase-text p{
-    margin-top: 2em;
-}
-.showcase-text .red-underline{
-    border-bottom: 3px solid #FF3A44;
-}
-
-.showcase-text .yellow-underline{
-    border-bottom:  3px solid #F6BB00;
-}
-.showcase-text .green-underline{
-    border-bottom: 3px solid #1EB742;
-}
-.showcase-text .blue-underline{
-    border-bottom:  5px solid #3D95F7;
-}
-.showcase-text img{
-    margin:2em 0;
-}
-.showcase-pic{
-    text-align: right;
-    transform: translateY(125px);
-}
-
-
 @media only screen and (min-width: 1024px){
-
+    /* navbar  */
     .navbar a {
         padding: 0 20px;
     }
@@ -182,6 +174,74 @@ a{
     }
     .navbar nav{
         display: block;
+    }
+
+    /* about */
+    .about .flex{
+        gap: 2em;
+    }
+    .about .flex.left{
+        justify-content: flex-start;
+        text-align: left;
+    }
+    .about .flex.left .text{
+        width: 100%;
+        max-width: 517px;
+    }
+    .about .flex.right{
+        justify-content: flex-end;
+        text-align: right;
+    }
+    .about .bg-ellipse{
+        border-radius: 100%;
+        padding: 6em 0 4em 0 !important;
+        margin-top: 4em;
+    }
+    /* FONTS */
+    h1{
+        font-size: 54px;
+        font-weight: 700;
+        line-height: 65px;
+    }
+    h2{
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 42px;
+    }
+    h3{
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 42px;
+    }
+    h4{
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 42px;
+    }
+
+    .subtitle-1{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.36px;
+    }
+    .subtitle-2{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .header-text{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 19.36px;
+    }
+    .body1-text{
+        font-size: 21px;
+        line-height: 48px;
+        font-weight: 500;
+    }
+    .body2-text{
+        font-size: 21px;
+        line-height: 42px;
+        font-weight: 400;
     }
 }
 
