@@ -10,6 +10,14 @@
     display: none;
 }
 
+.card{
+    background: #fff;
+    border-radius: 10px;
+    padding: 1em;
+    text-align: center;
+    filter: drop-shadow(0px 4px 10px rgba(175, 175, 175, 0.25));
+}
+
 /* tablet */
 @media only screen and (max-width: 1023px){
 
@@ -32,6 +40,10 @@
         justify-content: center;
         align-items: center;
         height:100%;
+    }
+    .grid.grid-3 {
+        grid-template-columns: repeat(3,1fr);
+        justify-items: center;
     }
 }
 /*.flex{
