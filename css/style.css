@@ -133,6 +133,31 @@ section.about{
     color: #1662FA;
 }
 
+/* PRODUCT */
+section.product{
+    background: var(--primary-light-color);
+    padding: 120px 0;
+}
+.product ul{
+    width: 100%;
+    max-width: 622px;
+}
+.product ul li{
+    display: flex;
+    gap: 1em;
+    align-items: baseline;
+}
+.product li i{
+    color: #3D95F7;
+    padding: 1em;
+    border-radius: 100%;
+    transition: 0.2s;
+}
+.highlight{
+    background: rgb(61, 149, 247);
+    color: rgb(255, 255, 255) !important;
+    
+}
 @media only screen and (max-width: 425px){
     .navbar img{
         width: 30vw;

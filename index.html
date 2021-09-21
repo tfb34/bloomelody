@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!--Navbar-->
+    <!-- Navbar -->
     <div class="navbar">
         <div class="container flex">
             <img src="https://dummyimage.com/200x60/e8e5e8/fff.png&text=logo" alt="Bloomelody logo">
@@ -21,15 +21,15 @@
             <nav id="navbarMenu" class="hide">
                 <i class="fas fa-times" onclick="toggle(navbarMenu)"></i>
                 <ul class="flex">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#product">Product</a></li>
+                    <li><a href="#about" onclick="toggle(navbarMenu)">About</a></li>
+                    <li><a href="#product" onclick="toggle(navbarMenu)">Product</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </div>
-    <!--Showcase-->
+    <!-- Showcase -->
     <section class="showcase">
         <div class="container grid">
             <div class="showcase-text">
@@ -47,7 +47,7 @@
         </div>
     </section>
 
-    <!--About-->
+    <!-- About -->
     <section class="about" id="about">
         <div class="container">
             <div class="flex left">
@@ -91,9 +91,49 @@
         </div>
     </section>
 
+    <!-- Product -->
+    <section class="product" id="product">
+        <div class="container grid">
+            <div>gif</div>
+            <ul>
+                <li>
+                    <i class="fas fa-paint-brush" id="customizationIcon"></i>
+                    <div class="text">
+                        <a href="#" onmouseenter="highlight(customizationIcon)" onmouseleave="unhighlight(customizationIcon)"><h4>Customization & Tailoring</h4></a>
+                        <p class="body2-text">Upload your own music and pictures or use ours to customize your content based on your student’s needs.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <i class="fas fa-sitemap" id="organizationIcon"></i>
+                    <div class="text">
+                        <a href="#" onmouseenter="highlight(organizationIcon)" onmouseleave="unhighlight(organizationIcon)"><h4>Organization</h4></a>
+                        <p class="body2-text">Create a curriculum at your own pace to share with one or all of your students.</p>
+                    </div>
+                </li>
+
+                 <li>
+                    <i class="fas fa-users" id="engagementIcon"></i>
+                    <div class="text">
+                        <a href="#" onmouseenter="highlight(engagementIcon)" onmouseleave="unhighlight(engagementIcon)"><h4>Enhancing Engagement & Interaction</h4></a>
+                        <p class="body2-text">Bring music, visual aid, and fun to the classroom - grounded in evidence-based methods.</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-chart-bar" id="performaceIcon"></i>
+                    <div class="text">
+                        <a href="#" onmouseenter="highlight(performaceIcon)" onmouseleave="unhighlight(performaceIcon)"><h4>Performance Dashboard</h4></a>
+                        <p class="body2-text">Access to grading software and performance indicators to track your student’s progress until mastery.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
     <script type="text/javascript" src="./myScript.js"></script>
 </body>
 </html>
+
 
 
 
