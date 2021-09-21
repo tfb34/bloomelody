@@ -26,6 +26,13 @@
         align-items: center;
         height:100%;
     }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        height:100%;
+    }
 }
 /*.flex{
     display: flex;
@@ -41,4 +48,5 @@
     align-items: center;
     height:100%;
 }*/
+
 
