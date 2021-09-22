@@ -18,7 +18,7 @@ function unhighlight(el){
 const sliders = document.querySelectorAll(".slide-in")
 
 const appearOptions = {
-  threshold: 0.25,
+  threshold: 0,
   rootMargin: "0px 0px -250px 0px"
 };
 
