@@ -51,6 +51,14 @@ a{
     width: 100%;
     z-index: 1000;
 }
+.navbar nav a span{
+    padding: 0 4px;
+}
+.navbar nav a:hover span{
+    color: #f9F4D8;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #F9F4D8;
+}
 .navbar > .flex{
     display: flex;
     align-items: center;
@@ -292,6 +300,10 @@ footer .fab{
     color: #fff;
     font-size: 25px;
     margin-right: 0.5em;
+    cursor: pointer;
+}
+footer .fab:hover{
+    color: #F6BB00;
 }
 footer h3{
     color: #fff;
