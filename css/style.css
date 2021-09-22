@@ -171,6 +171,16 @@ section.product{
     margin: 2em 0;
     color:  #175293
 }
+.pricing h2 img{
+    width: 41px;
+    height: 64px;
+    transform: rotate(-16deg) translate(-20px,22px);
+}
+.pricing h2 img:nth-child(2){
+    width: 57px;
+    height: 54px;
+    transform: rotate(16deg) translate(-24px,-42px)
+}
 .pricing img{
     width: 100%;
     max-width: 220px;
@@ -256,6 +266,7 @@ section.product{
 .team .card > img{
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
+    width: 140px;
 }
 .team .text img{
     position: absolute;
@@ -306,6 +317,7 @@ footer .copyright-text{
     max-width: 144px;
 }
 
+/*Mobile only*/
 @media only screen and (max-width: 425px){
     .navbar img{
         width: 30vw;
@@ -314,6 +326,13 @@ footer .copyright-text{
     h1{
         font-size: 24px;
         line-height: 34px;
+    }
+}
+
+
+@media only screen and (min-width: 768px){
+    .team .description span:nth-child(2){
+        display: none;
     }
 }
 
