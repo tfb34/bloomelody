@@ -113,6 +113,7 @@ a{
 /* ABOUT  */
 section.about{
     background: var(--primary-light-color);
+    overflow-x: hidden !important;
 }
 .about .container{
     padding-top: 100px;
