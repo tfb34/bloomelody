@@ -112,6 +112,14 @@ a{
     width: 100%;
     max-width: 260px;
 }
+.showcase-btns img{
+    width: 168px;
+    height: 50px;
+    margin:0;
+}
+.showcase-btns img:nth-child(1){
+    margin-top:2em;
+}
 .showcase-pic{
     text-align: right;
     transform: translateY(125px);
@@ -292,10 +300,14 @@ section.product{
 /* footer  */
 footer{
     background: #0A264F;
-    color: #fff;
+    color: rgb(255, 255, 255);
+    /* background-image: url(../assets/32_curve_dark_blue.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
     padding-top: 5em;
     padding-bottom: 5em;
 }
+
 footer .fab{
     color: #fff;
     font-size: 25px;
@@ -408,6 +420,11 @@ footer .copyright-text{
         margin-top: 4em;
     }
 
+    /*pricing*/
+    .pricing .card img{
+        width:220px;
+        height:220px;
+    }
     /* team */
     .team .header{
         gap: 2em;
