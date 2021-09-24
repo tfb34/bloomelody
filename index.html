@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bloomelody</title>
     <!--FAVICON (32x32)-->
-    <!-- <link rel="shortcut icon" href="assets/colibritech-logo.ico" type="favicon/ico"> -->
+    <link rel="shortcut icon" href="./assets/favicon.png" type="favicon/ico">
     <!--APPLE TOUCH ICON (180x180)-->
-    <!-- <link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png"> -->
+    <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
     <!--Custom CSS-->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/utilities.css">
@@ -105,12 +105,24 @@
     <!-- Product -->
     <section class="product" id="product">
         <div class="container grid">
-            <div>gif</div>
+            <div class="mobile-wrapper modal">
+                <i class="fas fa-times" onclick="document.querySelector('.product .modal').classList.remove('show')"></i>
+                <div class="phone-wrapper">
+                    <img src="./assets/phone frame.png" alt="apple iphone pic" class="phone-frame">
+                    <img src="./assets/Customization.gif" alt="customization gif" id="customizationGif" class="gif show">
+                    <img src="./assets/Organization.gif" alt="organization gif" id="organizationGif" class="gif">
+                    <img src="./assets/Enhancing.gif" alt="enhancing gif" id="enhancingGif" class="gif">
+                    <img src="./assets/Performance.gif" alt="performance gif" id="performanceGif" class="gif">
+
+                    <img src="./assets/red-note.png" alt="Red music note image" style="position: absolute;bottom: 0;left: 0;z-index: 10;transform: translate(-50px, 24px);">
+                    <img src="./assets/yellow-note.png" alt="Yellow music note image" style="position: absolute;right: 0;bottom: 0;z-index: 10;transform: translate(42px, 40px);">
+                </div>
+            </div>
             <ul>
                 <li>
-                    <i class="fas fa-paint-brush" id="customizationIcon"></i>
+                    <i class="fas fa-paint-brush highlight" id="customizationIcon"></i>
                     <div class="text">
-                        <a href="#" onmouseenter="highlight(customizationIcon)" onmouseleave="unhighlight(customizationIcon)"><h4>Customization & Tailoring</h4></a>
+                        <a href="javascript:select(customizationGif,customizationIcon)"><h4>Customization & Tailoring</h4></a>
                         <p class="body2-text">Upload your own music and pictures or use ours to customize your content based on your student’s needs.</p>
                     </div>
                 </li>
@@ -118,7 +130,7 @@
                 <li>
                     <i class="fas fa-sitemap" id="organizationIcon"></i>
                     <div class="text">
-                        <a href="#" onmouseenter="highlight(organizationIcon)" onmouseleave="unhighlight(organizationIcon)"><h4>Organization</h4></a>
+                        <a href="javascript:select(organizationGif,organizationIcon)"><h4>Organization</h4></a>
                         <p class="body2-text">Create a curriculum at your own pace to share with one or all of your students.</p>
                     </div>
                 </li>
@@ -126,14 +138,14 @@
                  <li>
                     <i class="fas fa-users" id="engagementIcon"></i>
                     <div class="text">
-                        <a href="#" onmouseenter="highlight(engagementIcon)" onmouseleave="unhighlight(engagementIcon)"><h4>Enhancing Engagement & Interaction</h4></a>
+                        <a href="javascript:select(enhancingGif,engagementIcon)"><h4>Enhancing Engagement & Interaction</h4></a>
                         <p class="body2-text">Bring music, visual aid, and fun to the classroom - grounded in evidence-based methods.</p>
                     </div>
                 </li>
                 <li>
                     <i class="fas fa-chart-bar" id="performanceIcon"></i>
                     <div class="text">
-                        <a href="#" onmouseenter="highlight(performanceIcon)" onmouseleave="unhighlight(performanceIcon)"><h4>Performance Dashboard</h4></a>
+                        <a href="javascript:select(performanceGif,performanceIcon)"><h4>Performance Dashboard</h4></a>
                         <p class="body2-text">Access to grading software and performance indicators to track your student’s progress until mastery.</p>
                     </div>
                 </li>
@@ -304,7 +316,7 @@
             </li>
             <li class="card grid">
                 <img src="./assets/29_winnie_fix.png" alt="ux designer pic">
-                <div class="text">  
+                <div class="text designer">  
                     <h4>Winnie Chin</h4>
                     <p class="body1-text">UX/UI Designer</p>
                     <p class="subtitle-2">BE Biomedical Engineering</p>
@@ -319,7 +331,6 @@
     </section>
 
    <footer class="footer" id="contact">
-       <!-- <img src="./assets/32_curve_dark_blue.png" alt=""> -->
        <div class="container grid">
 
             <div>

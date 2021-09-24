@@ -7,6 +7,30 @@ function scrollTo(hash) {
     location.hash = "#" + hash;
 }
 
+function show(el){
+
+  let currElDisplayed = document.querySelector('.gif.show')
+  if(currElDisplayed){
+    currElDisplayed.classList.remove('show')
+  }
+  el.classList.add('show')
+}
+
+function select(gifEl,iconEl){
+  let modal = document.querySelector('.modal')
+  modal.classList.add('show')
+  let currIconEl = document.querySelector('i.highlight')
+  currIconEl.classList.remove("highlight")
+  iconEl.classList.add("highlight")
+
+  //display gif
+  let currElDisplayed = document.querySelector('.gif.show')
+  if(currElDisplayed){
+    currElDisplayed.classList.remove('show')
+  }
+  gifEl.classList.add('show')
+}
+
 function highlight(el){
 	el.classList.add("highlight")
 }

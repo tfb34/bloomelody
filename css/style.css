@@ -21,6 +21,7 @@ body{
     color:#0A264F;
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
+    background: var(--primary-light-color);
 }
 
 h4{
@@ -169,12 +170,48 @@ section.product{
     display: flex;
     gap: 1em;
     align-items: baseline;
+    margin:2.5em 0;
 }
 .product li i{
     color: #3D95F7;
     padding: 1em;
     border-radius: 100%;
     transition: 0.2s;
+}
+.product .phone-frame{
+    z-index: 1;
+    position: relative;
+}
+.product .phone-wrapper{
+    position: relative;
+    width: 397px;
+}
+.product .gif{
+    position: absolute;
+    z-index: 0;
+    left: 28px;
+    top: 26px;
+    display: none;
+}
+#enhancingGif,
+#organizationGif{
+    left: 28px;
+    top: 25px;
+    width: 340px;
+}
+
+#performanceGif{
+    top:23px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+.mobile-wrapper i{
+    position: absolute;
+    right: 2em;
+    top: 2em;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
 }
 .highlight{
     background: rgb(61, 149, 247);
@@ -293,17 +330,42 @@ section.product{
     position: absolute;
     bottom: 0;
     right: 0;
-    transform: rotate(12deg) translate(31px,22px);
-    -webkit-transform: rotate(12deg) translate(31px,22px);
+    /* transform: rotate(12deg) translate(31px,22px);
+    -webkit-transform: rotate(12deg) translate(31px,22px); */
+}
+.team .text.ceo img{
+    transform: translate(26px,40px);
+    -webkit-transform: translate(26px,40px);
+}
+.team .text.coFounder img{
+    transform: translate(19px,27px);
+    -webkit-transform: translate(19px,27px);
+}
+.team .text.productOwner img{
+    transform: translate(8px,23px);
+    -webkit-transform: translate(8px,23px);
+}
+
+.team .text.flutterEngineer1 img{
+    transform: translate(24px,48px);
+    -webkit-transform: translate(24px,48px);
+}
+.team .text.flutterEngineer2 img{
+    -webkit-transform: translate(4px, 38px);
+    transform: translate(4px, 38px);
+}
+.team .text.designer img{
+    -webkit-transform: translate(26px, 33px);
+    transform: translate(26px, 33px);
 }
 
 /* footer  */
 footer{
-    background: #0A264F;
+    /* background: #0A264F; */
     color: rgb(255, 255, 255);
-    /* background-image: url(../assets/32_curve_dark_blue.png);
+    background-image: url(../assets/32_curve_dark_blue.png);
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
     padding-top: 5em;
     padding-bottom: 5em;
 }
@@ -381,6 +443,24 @@ footer .copyright-text{
     }
     .showcase{
         text-align: center;
+    }
+
+    /* product */
+    .product .mobile-wrapper{
+        display: none;
+    }
+    .product .phone-wrapper{
+        margin:0 auto;
+    }
+    .modal{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #7575759e;
+        padding-top: 120px;
+        z-index: 1000;
     }
    
 }
