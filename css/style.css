@@ -199,6 +199,20 @@ section.product{
     color: #fff;
     cursor: pointer;
 }
+.phone-wrapper img.notes{
+    position: absolute;
+    z-index: 10;
+}
+.phone-wrapper img:nth-child(6){
+    bottom: 0;
+    left: 0;
+    transform: translate(-50px, 24px);
+}
+.phone-wrapper img:nth-child(7){
+    right: 0;
+    bottom: 0;
+    transform: translate(42px, 40px);
+}
 .highlight{
     background: rgb(61, 149, 247);
     color: rgb(255, 255, 255) !important;
@@ -442,6 +456,9 @@ footer .copyright-text{
         margin:0 auto;
         width: 256px;
         height:505px;
+    }
+    .phone-wrapper img.notes{
+        width:100px;
     }
     .product .gif{
         position: absolute;

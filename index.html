@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Bloomelody</title>
+    <!--META DESCRIPTION-->
+    <meta name="description" content="">
+    <!--META KEYWORDS-->
+    <meta name="keywords" content="">
+    <!--META AUTHOR-->
+    <meta name="author" content="">
     <!--FAVICON (32x32)-->
-    <link rel="shortcut icon" href="./assets/favicon.png" type="favicon/ico">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="favicon/ico">
     <!--APPLE TOUCH ICON (180x180)-->
     <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
     <!--Custom CSS-->
@@ -24,10 +31,10 @@
             <nav id="navbarMenu" class="hide">
                 <i class="fas fa-times" onclick="toggle(navbarMenu)"></i>
                 <ul class="flex">
-                    <li><a href="#about" onclick="toggle(navbarMenu)"><span>About</span></a></li>
-                    <li><a href="#product" onclick="toggle(navbarMenu)"><span>Product</span></a></li>
-                    <li><a href="#team" onclick="toggle(navbarMenu)"><span>Team</span></a></li>
-                    <li><a href="#contact" onclick="toggle(navbarMenu)"><span>Contact</span></a></li>
+                    <li><a href="#about" onclick="toggle(navbarMenu)" ><span>About</span></a></li>
+                    <li><a href="#product" onclick="toggle(navbarMenu)" ><span>Product</span></a></li>
+                    <li><a href="#team" onclick="toggle(navbarMenu)" ><span>Team</span></a></li>
+                    <li><a href="#contact" onclick="toggle(navbarMenu)" ><span>Contact</span></a></li>
                 </ul>
             </nav>
         </div>
@@ -38,14 +45,14 @@
             <div class="showcase-text">
                 <h1>Helping Late <br class="hide-tablet">Bloomers <span class="blue-underline">Blossom</span></h1>
                 <p class="body1-text">Bring <span class="red-underline">music</span>, <span class="yellow-underline">visual aid</span>, and <span class="green-underline">fun</span> to the classroom.</p>
-                <img src="./assets/2_notes_staff.png" alt="Music notes image">
+                <img src="./assets/2_notes_staff.png" alt="Music notes">
                 <div class="showcase-btns">
                     <a href="#"><img src="./assets/6_google_play.png" alt="google play logo"></a>
                     <a href="#"><img src="./assets/7_app_store.png" alt="apple store logo"></a>
                 </div>
             </div>
             <div class="showcase-pic hide-tablet">
-                <img src="./assets/3_hero.png" alt="Picture of woman and child">
+                <img src="./assets/3_hero.png" alt="Woman and child learning">
             </div>
         </div>
     </section>
@@ -54,7 +61,7 @@
     <section class="about" id="about">
         <div class="container">
             <div class="flex left">
-                <img src="./assets/8_teacher_exhausted.png" alt="avatar">
+                <img src="./assets/8_teacher_exhausted.png" alt="teacher exhausted">
                 <div class="text">
                     <h4>“Exhausted, burned-out, frustrated.”</h4>
                     <h3>Is this you?</h3>
@@ -71,7 +78,7 @@
             </div>
 
             <div class="flex left">
-                <img src="./assets/9_teacher_sad.png" alt="avatar">
+                <img src="./assets/9_teacher_sad.png" alt="sad teacher">
                 <div class="text">
                     <h4>They need help creating content, teaching, and tracking the progress of students.</h4>
                     <h3>Currently ...</h3>
@@ -81,7 +88,7 @@
             <div class="grid">
                 <div></div>
                 <div class="slide-in from-right">
-                    <img src="./assets/10_teacher_thoughts.png" alt="avatar" style="width:100%;max-width:753px;">
+                    <img src="./assets/10_teacher_thoughts.png" alt="teacher thinking" style="width:100%;max-width:753px;">
                     <div class="text">
                         <h3>methods are <span>costly</span> and not <span>efficient</span>.</h3>
                     </div>
@@ -90,12 +97,8 @@
 
 
             <div style="background:#0B57AD" class="bg-ellipse">
-                <!-- <div style="width:100%;max-width:317px;margin:0 auto;">
-                    <img src="https://dummyimage.com/317x140/e0e0e0/fff&text=img" alt="student icon" style="width:49%;">
-                    <img src="https://dummyimage.com/317x140/e0e0e0/fff&text=img" alt="Teacher icon" style="width:49%;">
-                </div> -->
-                <img src="./assets/11_teacher_connect.png" alt="avatar" style="width:100%;max-width:317px;"><br>
-                <img src="./assets/bloomelody_text.png" alt="logo" style="width:100%;max-width:420px;margin-top:40px;">
+                <img src="./assets/11_teacher_connect.png" alt="teacher helping student" style="width:100%;max-width:317px;"><br>
+                <img src="./assets/bloomelody_text.png" alt="bloomelody logo" style="width:100%;max-width:420px;margin-top:40px;">
                 <h3 style="color:#fff;color: #fff;width: 100%;max-width: 809px;margin: 0.5em auto;">Now, therapists will have the tools to streamline their jobs, thus improve the quality of work, and by extension, care for their students.</h3>
             </div>
 
@@ -109,13 +112,13 @@
                 <i class="fas fa-times" onclick="document.querySelector('.product .modal').classList.remove('show')"></i>
                 <div class="phone-wrapper">
                     <img src="./assets/phone frame.png" alt="apple iphone pic" class="phone-frame">
-                    <img src="./assets/Customization.gif" alt="customization gif" id="customizationGif" class="gif show">
+                    <img src="./assets/Customization.gif" alt="customization and tailoring gif" id="customizationGif" class="gif show">
                     <img src="./assets/Organization.gif" alt="organization gif" id="organizationGif" class="gif">
-                    <img src="./assets/Enhancing.gif" alt="enhancing gif" id="enhancingGif" class="gif">
-                    <img src="./assets/Performance.gif" alt="performance gif" id="performanceGif" class="gif">
+                    <img src="./assets/Enhancing.gif" alt="Enhancing Engagement & Interaction gif" id="enhancingGif" class="gif">
+                    <img src="./assets/Performance.gif" alt="Performance Dashboard gif" id="performanceGif" class="gif">
 
-                    <img src="./assets/red-note.png" alt="Red music note image" style="position: absolute;bottom: 0;left: 0;z-index: 10;transform: translate(-50px, 24px);">
-                    <img src="./assets/yellow-note.png" alt="Yellow music note image" style="position: absolute;right: 0;bottom: 0;z-index: 10;transform: translate(42px, 40px);">
+                    <img src="./assets/red-note.png" alt="Red music note" class="notes">
+                    <img src="./assets/yellow-note.png" alt="Yellow music note" class="notes">
                 </div>
             </div>
             <ul class="gif-list">
@@ -156,15 +159,15 @@
         <div class="pricing">
 
             <h2>
-                <img src="./assets/yellow-note-vertical.png" alt="yellow note icon"> 
+                <img src="./assets/yellow-note-vertical.png" alt="yellow music note icon"> 
                    Pricing Plans
-                <img src="./assets/16_note_double_dark_blue.png" alt="purple note icon">
+                <img src="./assets/16_note_double_dark_blue.png" alt="purple music note icon">
             </h2>
 
             <div class="grid grid-3" style="margin-bottom: 0;">
 
                 <div class="card basic">
-                    <img src="./assets/17_teacher.png" alt="avatar">
+                    <img src="./assets/17_teacher.png" alt="teacher">
                     <h3>Basic</h3>
                     <h4>$ 5 / month</h4>
                     <p class="subtitle-2">$ 15 / 3 months</p>
@@ -215,7 +218,7 @@
                 </div>
 
                 <div class="card basic" style="margin-bottom: 0;">
-                    <img src="./assets/18_teacher_student.png" alt="avatar">
+                    <img src="./assets/18_teacher_student.png" alt="teacher student">
                     <h3>Premium</h3>
                     <h4>$ 20 / month</h4>
                     <p class="subtitle-2">$ 35 / 3 months</p>
@@ -269,8 +272,7 @@
 
            <ul class="grid">
             <li class="card grid">
-                <!-- img src="https://dummyimage.com/140x140/adadad/19191f&text=img" alt="ceo pic"> -->
-                <img src="./assets/Preston.jpg" alt="ceo pic">
+                <img src="./assets/Preston.jpg" alt="CEO Preston Peck">
                 <div class="text ceo">  
                     <h4>Preston Peck</h4>
                     <p class="body1-text">Co-Founder & CEO</p>
@@ -279,7 +281,7 @@
                 </div>
             </li>
             <li class="card grid">
-                <img src="./assets/Rafaela.jpeg" alt="co-founder pic">
+                <img src="./assets/Rafaela.jpeg" alt="Co-Founder Rafaela Villacres">
                 <div class="text coFounder">  
                     <h4>Rafaela Villacres</h4>
                     <p class="body1-text">Co-Founder & PM</p>
@@ -288,7 +290,7 @@
                 </div>
             </li>
             <li class="card grid">
-                <img src="./assets/Max.jpeg" alt="product owner pic">
+                <img src="./assets/Max.jpeg" alt="Product Owner Max Inciong">
                 <div class="text productOwner">  
                     <h4>Max Inciong</h4>
                     <p class="body1-text">Product Owner</p>
@@ -297,7 +299,7 @@
                 </div>
             </li>
             <li class="card grid">
-                <img src="./assets/Sebastian.png" alt="flutter engineer pic">
+                <img src="./assets/Sebastian.png" alt="flutter engineer Sebastian Grygorczuk">
                 <div class="text flutterEngineer1">  
                     <h4>Sebastian Grygorczuk</h4>
                     <p class="body1-text">Flutter Engineer</p>
@@ -306,7 +308,7 @@
                 </div>
             </li>
             <li class="card grid">
-                <img src="./assets/Jade.jpg" alt="flutter engineer pic">
+                <img src="./assets/Jade.jpg" alt="flutter engineer Jade Truncale">
                 <div class="text flutterEngineer2">  
                     <h4>Jade Truncale</h4>
                     <p class="body1-text">Flutter Engineer</p>
@@ -315,7 +317,7 @@
                 </div>
             </li>
             <li class="card grid">
-                <img src="./assets/29_winnie_fix.png" alt="ux designer pic">
+                <img src="./assets/29_winnie_fix.png" alt="UX/UI Designer Winnie Chin">
                 <div class="text designer">  
                     <h4>Winnie Chin</h4>
                     <p class="body1-text">UX/UI Designer</p>
