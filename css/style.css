@@ -159,18 +159,19 @@ section.product{
 }
 .product .container{
     padding-top: 120px;
-    padding-bottom: 120px;
 }
 .product ul{
     width: 100%;
     max-width: 622px;
     margin: 1em auto;
 }
+.product ul.gif-list li{
+    margin:2.5em 0;
+}
 .product ul li{
     display: flex;
     gap: 1em;
     align-items: baseline;
-    margin:2.5em 0;
 }
 .product li i{
     color: #3D95F7;
@@ -221,8 +222,8 @@ section.product{
 .pricing h2 img:nth-child(2){
     width: 57px;
     height: 54px;
-    transform: rotate(16deg) translate(-24px,-42px);
-    -webkit-transform: rotate(16deg) translate(-24px,-42px)
+    transform: rotate(0deg) translate(-24px,-31px);
+    -webkit-transform: rotate(0deg) translate(-24px,-31px);
 }
 .pricing img{
     width: 100%;
@@ -500,6 +501,9 @@ footer .copyright-text{
     }
 
     /* product */
+    .product .container{
+        padding-bottom: 120px;
+    }
     .product .phone-frame{
         z-index: 1;
         position: relative;
