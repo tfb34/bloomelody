@@ -278,6 +278,33 @@ section.product{
 .pricing .card.standard .body4-text{
     color: #fff;
 }
+/* product roadmap */
+.product-roadmap{
+    display: none;
+}
+.product-roadmap-mobile {
+    padding-top:100px;
+}
+.product-roadmap h2,
+.product-roadmap-mobile h2{
+    color:#175293;
+}
+
+.product-roadmap-mobile .milestone {
+    width: 100%;
+    margin: 40px auto;
+    min-width:280px;
+    max-width: 380px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.product-roadmap-mobile .milestone img {
+   width: 60px;
+    height: 60px;
+}
+.product-roadmap-mobile .milestone h3{
+    color:#175293;
+}
 
 /* team */
 .team .container{
@@ -418,6 +445,12 @@ footer .copyright-text{
     h1{
         font-size: 24px;
         line-height: 34px;
+    }
+    .team{
+        padding:1em 0
+    }
+    .team .container{
+        padding:90px 0;
     }
 }
 
@@ -661,4 +694,15 @@ footer .copyright-text{
     
 }
 
-
+@media only screen and (min-width:1440px){
+    /* product roadmap */
+    .product-roadmap{
+        display: block;
+    }
+    .product-roadmap-mobile{
+        display: none;
+    }
+    .pricing{
+        padding-bottom: 100px;
+    }
+}
