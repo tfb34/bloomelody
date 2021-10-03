@@ -60,7 +60,7 @@
         <?php if($feedback == "success") : ?>
             <i class="far fa-thumbs-up" style="font-size:3em;"></i><br><br>
             <h3>Thank you!</h3>
-            <p class="body1-text">We've recieved your submission, and we'll be in touch soon!</p><br>
+            <p class="body1-text">We've received your submission, and we'll be in touch soon!</p><br>
             <a href="/" class="button link-button">Go Back</a>
 
         <?php elseif($feedback == "error") : ?>
