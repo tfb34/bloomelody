@@ -32,11 +32,14 @@ function select(gifEl,iconEl){
 }
 
 function highlight(el){
-	el.classList.add("highlight")
+  
+  el.classList.add("sub-highlight")
+  
+	
 }
 
 function unhighlight(el){
-	el.classList.remove("highlight")
+	el.classList.remove("sub-highlight")
 }
 
 const sliders = document.querySelectorAll(".slide-in")
@@ -65,3 +68,28 @@ appearOptions);
 sliders.forEach(slider => {
   appearOnScroll.observe(slider);
 });
+
+
+
+
+(function() {
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+      console.log('form submitted.');
+      if (!grecaptcha.getResponse()) {
+          console.log('captcha not yet completed.');
+
+          event.preventDefault(); //prevent form submit
+          grecaptcha.execute();
+      } else {
+          console.log('form really submitted.');
+      }
+    });
+})();
+
+
+
+onCompleted = function() {
+  console.log('captcha completed.');
+  $('#contact-form').submit();
+  // alert('wait to check for "captcha completed" in the console.');
+}

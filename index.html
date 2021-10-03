@@ -125,7 +125,7 @@
                 <li>
                     <i class="fas fa-paint-brush highlight" id="customizationIcon"></i>
                     <div class="text">
-                        <a href="javascript:select(customizationGif,customizationIcon)"><h4>Customization & Tailoring</h4></a>
+                        <a href="javascript:select(customizationGif,customizationIcon)"  onmouseover="highlight(customizationIcon)" onmouseout="unhighlight(customizationIcon)"><h4>Customization & Tailoring</h4></a>
                         <p class="body2-text">Upload your own music and pictures or use ours to customize your content based on your student’s needs.</p>
                     </div>
                 </li>
@@ -133,7 +133,7 @@
                 <li>
                     <i class="fas fa-sitemap" id="organizationIcon"></i>
                     <div class="text">
-                        <a href="javascript:select(organizationGif,organizationIcon)"><h4>Organization</h4></a>
+                        <a href="javascript:select(organizationGif,organizationIcon)" onmouseover="highlight(organizationIcon)" onmouseout="unhighlight(organizationIcon)"><h4>Organization</h4></a>
                         <p class="body2-text">Create a curriculum at your own pace to share with one or all of your students.</p>
                     </div>
                 </li>
@@ -141,14 +141,14 @@
                  <li>
                     <i class="fas fa-users" id="engagementIcon"></i>
                     <div class="text">
-                        <a href="javascript:select(enhancingGif,engagementIcon)"><h4>Enhancing Engagement & Interaction</h4></a>
+                        <a href="javascript:select(enhancingGif,engagementIcon)" onmouseover="highlight(engagementIcon)" onmouseout="unhighlight(engagementIcon)"><h4>Enhancing Engagement & Interaction</h4></a>
                         <p class="body2-text">Bring music, visual aid, and fun to the classroom - grounded in evidence-based methods.</p>
                     </div>
                 </li>
                 <li>
                     <i class="fas fa-chart-bar" id="performanceIcon"></i>
                     <div class="text">
-                        <a href="javascript:select(performanceGif,performanceIcon)"><h4>Performance Dashboard</h4></a>
+                        <a href="javascript:select(performanceGif,performanceIcon)" onmouseover="highlight(performanceIcon)" onmouseout="unhighlight(performanceIcon)"><h4>Performance Dashboard</h4></a>
                         <p class="body2-text">Access to grading software and performance indicators to track your student’s progress until mastery.</p>
                     </div>
                 </li>
@@ -373,9 +373,6 @@
                 </div>
             </li>
         </ul>
-
-
-        <!-- <img src="./assets/test5.png" alt="wave" class="footer-wave"> -->
         </div>
 
         
@@ -406,13 +403,20 @@
                 <img src="./assets/31_hero_2.png" alt="hero" class="hide-tablet circle-img">
             </div>
 
-            <div class="form-wrapper" style="width:100%;max-width:420px;">
+            <!--CONTACT FORM-->
+            <div class="form-wrapper">
                 <h3>Interested in learning more about us?</h3>
                 <p class="subtitle-2">Reach out to us by filling out the form below!</p>
-                <form action="">
-                    <input name="name" type="text" placeholder="Name*"><br>
-                    <input name="email" type="email" placeholder="Email*"><br>
+                <form id="contact-form" method="POST" action="/thankyou.php" >
+                    <input name="name" type="text" placeholder="Name*" required><br>
+                    <input name="email" type="email" placeholder="Email*" required><br>
                     <textarea name="message" cols="30" rows="5" placeholder="Message"></textarea><br>
+
+                    <!--reCAPTCHA-->
+                    <div id='recaptcha' class="g-recaptcha"
+          data-sitekey="6LdoNqUcAAAAAIucaFxKmWSaMRCJkid3NUpYalCs"
+          data-callback="onCompleted"
+          data-size="invisible"></div>
                     <input type="submit" value="Submit">
                 </form>
             </div>
@@ -424,7 +428,12 @@
        </div>
    </footer>
 
-    <script type="text/javascript" src="./myScript.js"></script>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <!--reCAPTCHA API-->
+   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+   <!--custom script-->
+    <script type="text/javascript" src="./myScript.js" ></script>
 </body>
 </html>
 

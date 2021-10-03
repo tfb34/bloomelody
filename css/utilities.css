@@ -42,6 +42,13 @@
   opacity: 1;
 }
 
+.button.link-button{
+    text-transform: uppercase;
+    background: var(--primary-color);
+    padding: 12px 24px;
+    border-radius: 4em;
+}
+
 
 /* Mobile only  */
 @media only screen and (max-width: 767px){

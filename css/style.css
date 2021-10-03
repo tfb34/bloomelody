@@ -217,6 +217,10 @@ section.product{
     background: rgb(61, 149, 247);
     color: rgb(255, 255, 255) !important;
 }
+.sub-highlight{
+    background: rgb(61, 149, 247);
+    color: rgb(255, 255, 255) !important;
+}
 
 /* pricing  */
 .pricing {
@@ -341,6 +345,7 @@ section.product{
 }
 .team .card .text{
     text-align: left;
+    position:relative;
 }   
 .team ul{
     margin: 1em 0;
@@ -411,8 +416,8 @@ footer h3{
 }
 footer .form-wrapper{
     margin-top: 4em;
-}
-footer .form-wrapper{
+    width:100%;
+    max-width:420px;
     justify-self: center;
     margin-bottom: 4em;
 }
@@ -427,13 +432,27 @@ footer .copyright-text{
     width: 100%;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #0A264FE6;
+    font-weight: 500;
 }
 .footer input[type="submit"] {
     color: #fff;
-    background: rgba(246, 187, 0, 0.5) !important;
+    background: rgba(246, 187, 0, 0.8);
     padding: 1em 2em;
     border: none;
     max-width: 144px;
+    cursor:pointer;
+}
+.footer input[type="submit"]:hover{
+    background: #F6BB00;
+}
+
+.footer textarea:focus, input:focus{
+    
+        outline: 2px solid #F6BB00;
+    
 }
 
 /*Mobile only*/
