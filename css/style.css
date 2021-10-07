@@ -52,6 +52,9 @@ a{
     width: 100%;
     z-index: 1000;
 }
+.navbar-logo{
+    max-height:80px;
+}
 .navbar nav a span{
     padding: 0 4px;
 }
@@ -599,8 +602,14 @@ footer .copyright-text{
     .navbar nav{
         display: block;
     }
+    .navbar-logo{
+        max-height:55px;
+    }
 
     /* showcase */
+    .showcase{
+        padding-top:0;
+    }
     .showcase-btns.flex{
         justify-content: left;
         gap:1em;
