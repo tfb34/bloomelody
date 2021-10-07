@@ -22,8 +22,37 @@
 
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        #loader {
+            border: 12px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 12px solid #444444;
+            width: 70px;
+            height: 70px;
+            animation: spin 1s linear infinite;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+          
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+          
+    </style>
+
+
 </head>
 <body>
+    
+    <div id="loader"></div>
+    
     <!-- Navbar -->
     <div class="navbar">
         <div class="container flex">
@@ -257,7 +286,7 @@
                 <h2 style="text-align: center;"><img src="./assets/19_bars.png" alt="yellow bars" > Product Roadmap</h2>
                 <div class="grid" style="height: unset;margin-top:86px;">
                     <img src="./assets/20g_milestone_july_21.png" alt="milestone july 2021" style="transform: translate(75px,20px);">
-                    <a href=""><img src="./assets/20i_milestone_january_22.png" alt="milestone january 2022" style="transform: translate(-22px,46px);"></a>
+                    <img src="./assets/20i_milestone_january_22.png" alt="milestone january 2022" style="transform: translate(-22px,46px);">
                 </div>
                 <div style="width: 100%;">
                     <img src="./assets/20b_staff_with_notes.png" alt="notes staff" style="width:100%;">
