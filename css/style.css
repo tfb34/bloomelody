@@ -79,15 +79,13 @@ a{
 }
 /* SHOWCASE */
 .showcase{
-    margin-top: 90px;
-}
-.showcase{
     background: var(--primary-color);
     color:#fff;
     padding-top:40px;
     padding-bottom:40px;
     height: 100%;
     max-height: 900px;
+    margin-top:90px;
 }
 .showcase-text p{
     margin-top: 2em;
@@ -485,6 +483,10 @@ footer .copyright-text{
     h1{
         font-size: 24px;
         line-height: 34px;
+    }
+    .showcase{
+        height: 80vh;
+        min-height: 667px;
     }
     .showcase-text p{
         line-height: 2em;

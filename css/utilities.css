@@ -67,6 +67,9 @@
 }
 
 @media only screen and (min-width: 1024px){
+    .hide-desktop-only{
+        display: none;
+    }
     .flex{
         display: flex;
         justify-content: center;
@@ -86,19 +89,6 @@
         align-items: self-start;
     }
 }
-/*.flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height:100%;
-}*/
 
-/* .grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    height:100%;
-}*/
 
 
