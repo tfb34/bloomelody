@@ -81,9 +81,6 @@ a{
 .showcase{
     margin-top: 90px;
 }
-
-
-/*showcase*/
 .showcase{
     background: var(--primary-color);
     color:#fff;
@@ -118,6 +115,10 @@ a{
     height: 50px;
     margin:0;
 }
+.showcase-btns.flex div > img{
+    position: absolute;
+    transform: translate(-63px, -37px);
+}
 .showcase-btns img:nth-child(1){
     margin-top:2em;
 }
@@ -125,6 +126,12 @@ a{
     text-align: right;
     transform: translateY(125px);
     -webkit-transform: translateY(125px);
+}
+.showcase-pic .note-group{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(-110px, 155px);
 }
 
 /* ABOUT  */
@@ -156,6 +163,12 @@ section.about{
 /* PRODUCT */
 section.product{
     background: var(--primary-light-color);
+}
+.wrap.cover{
+    background-size: cover !important;
+}
+.wrap.bottom{
+    background-position: bottom !important;
 }
 .product .container{
     padding-top: 120px;
@@ -311,6 +324,13 @@ section.product{
 }
 
 /* team */
+.wrap.contain {
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+}
+.wrap.center{
+    background-position: center !important;
+}
 .team .container{
     padding-top: 120px;
     padding-bottom: 120px;
@@ -554,6 +574,11 @@ footer .copyright-text{
         display: block;
     }
 
+    /* showcase */
+    .showcase-btns.flex{
+        justify-content: left;
+        gap:1em;
+    }
     /* about */
     .about .flex{
         gap: 2em;

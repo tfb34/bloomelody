@@ -47,20 +47,24 @@
                 <h1>Helping Late <br class="hide-tablet">Bloomers <span class="blue-underline">Blossom</span></h1>
                 <p class="body1-text">Bring <span class="red-underline">music</span>, <span class="yellow-underline">visual aid</span>, and <span class="green-underline">fun</span> to the classroom.</p>
                 <img src="./assets/2_notes_staff.png" alt="Music notes">
-                <div class="showcase-btns">
-                    <a href="#"><img src="./assets/6_google_play.png" alt="google play logo"></a>
-                    <a href="#"><img src="./assets/7_app_store.png" alt="apple store logo"></a>
+                <div class="showcase-btns flex">
+                    <a href="https://play.google.com/store/apps/details?id=com.bloomelody&hl=en_US&gl=US"><img src="./assets/6_google_play.png" alt="google play logo"></a>
+                    <div class="hide-mobile">
+                        <a><img src="./assets/7_app_store.png" alt="apple store logo"></a>
+                        <img src="./assets/5_coming_soon.png" alt="coming soon">
+                    </div>
                 </div>
             </div>
             <div class="showcase-pic hide-tablet">
                 <img src="./assets/3_hero.png" alt="Woman and child learning">
+                <img src="./assets/4_note_group.png" alt="note group" class="note-group">
             </div>
         </div>
     </section>
 
     <!-- About -->
-    <section class="about" id="about">
-        <div class="container">
+    <section class="about" id="about" >
+        <div class="container" style="background: url(./assets/about-bg.png);">
             <div class="flex left">
                 <img src="./assets/8_teacher_exhausted.png" alt="teacher exhausted">
                 <div class="text">
@@ -108,155 +112,160 @@
 
     <!-- Product -->
     <section class="product" id="product">
-        <div class="container grid">
-            <div class="mobile-wrapper modal">
-                <i class="fas fa-times" onclick="document.querySelector('.product .modal').classList.remove('show')"></i>
-                <div class="phone-wrapper">
-                    <img src="./assets/phone frame.png" alt="apple iphone pic" class="phone-frame">
-                    <img src="./assets/Customization.gif" alt="customization and tailoring gif" id="customizationGif" class="gif show">
-                    <img src="./assets/Organization.gif" alt="organization gif" id="organizationGif" class="gif">
-                    <img src="./assets/Enhancing.gif" alt="Enhancing Engagement & Interaction gif" id="enhancingGif" class="gif">
-                    <img src="./assets/Performance.gif" alt="Performance Dashboard gif" id="performanceGif" class="gif">
+        <div class="wrap cover bottom" style="background:url('./assets/gif-bg.png')">
+            <div class="container grid">
+                <div class="mobile-wrapper modal">
+                    <i class="fas fa-times" onclick="document.querySelector('.product .modal').classList.remove('show')"></i>
+                    <div class="phone-wrapper">
+                        <img src="./assets/phone frame.png" alt="apple iphone pic" class="phone-frame">
+                        <img src="./assets/Customization.gif" alt="customization and tailoring gif" id="customizationGif" class="gif show">
+                        <img src="./assets/Organization.gif" alt="organization gif" id="organizationGif" class="gif">
+                        <img src="./assets/Enhancing.gif" alt="Enhancing Engagement & Interaction gif" id="enhancingGif" class="gif">
+                        <img src="./assets/Performance.gif" alt="Performance Dashboard gif" id="performanceGif" class="gif">
 
-                    <img src="./assets/red-note.png" alt="Red music note" class="notes">
-                    <img src="./assets/yellow-note.png" alt="Yellow music note" class="notes">
+                        <img src="./assets/red-note.png" alt="Red music note" class="notes">
+                        <img src="./assets/yellow-note.png" alt="Yellow music note" class="notes">
+                    </div>
                 </div>
+                <ul class="gif-list">
+                    <li>
+                        <i class="fas fa-paint-brush highlight" id="customizationIcon"></i>
+                        <div class="text">
+                            <a href="javascript:select(customizationGif,customizationIcon)"  onmouseover="highlight(customizationIcon)" onmouseout="unhighlight(customizationIcon)"><h4>Customization & Tailoring</h4></a>
+                            <p class="body2-text">Upload your own music and pictures or use ours to customize your content based on your student’s needs.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-sitemap" id="organizationIcon"></i>
+                        <div class="text">
+                            <a href="javascript:select(organizationGif,organizationIcon)" onmouseover="highlight(organizationIcon)" onmouseout="unhighlight(organizationIcon)"><h4>Organization</h4></a>
+                            <p class="body2-text">Create a curriculum at your own pace to share with one or all of your students.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-users" id="engagementIcon"></i>
+                        <div class="text">
+                            <a href="javascript:select(enhancingGif,engagementIcon)" onmouseover="highlight(engagementIcon)" onmouseout="unhighlight(engagementIcon)"><h4>Enhancing Engagement & Interaction</h4></a>
+                            <p class="body2-text">Bring music, visual aid, and fun to the classroom - grounded in evidence-based methods.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-chart-bar" id="performanceIcon"></i>
+                        <div class="text">
+                            <a href="javascript:select(performanceGif,performanceIcon)" onmouseover="highlight(performanceIcon)" onmouseout="unhighlight(performanceIcon)"><h4>Performance Dashboard</h4></a>
+                            <p class="body2-text">Access to grading software and performance indicators to track your student’s progress until mastery.</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <ul class="gif-list">
-                <li>
-                    <i class="fas fa-paint-brush highlight" id="customizationIcon"></i>
-                    <div class="text">
-                        <a href="javascript:select(customizationGif,customizationIcon)"  onmouseover="highlight(customizationIcon)" onmouseout="unhighlight(customizationIcon)"><h4>Customization & Tailoring</h4></a>
-                        <p class="body2-text">Upload your own music and pictures or use ours to customize your content based on your student’s needs.</p>
-                    </div>
-                </li>
-
-                <li>
-                    <i class="fas fa-sitemap" id="organizationIcon"></i>
-                    <div class="text">
-                        <a href="javascript:select(organizationGif,organizationIcon)" onmouseover="highlight(organizationIcon)" onmouseout="unhighlight(organizationIcon)"><h4>Organization</h4></a>
-                        <p class="body2-text">Create a curriculum at your own pace to share with one or all of your students.</p>
-                    </div>
-                </li>
-
-                 <li>
-                    <i class="fas fa-users" id="engagementIcon"></i>
-                    <div class="text">
-                        <a href="javascript:select(enhancingGif,engagementIcon)" onmouseover="highlight(engagementIcon)" onmouseout="unhighlight(engagementIcon)"><h4>Enhancing Engagement & Interaction</h4></a>
-                        <p class="body2-text">Bring music, visual aid, and fun to the classroom - grounded in evidence-based methods.</p>
-                    </div>
-                </li>
-                <li>
-                    <i class="fas fa-chart-bar" id="performanceIcon"></i>
-                    <div class="text">
-                        <a href="javascript:select(performanceGif,performanceIcon)" onmouseover="highlight(performanceIcon)" onmouseout="unhighlight(performanceIcon)"><h4>Performance Dashboard</h4></a>
-                        <p class="body2-text">Access to grading software and performance indicators to track your student’s progress until mastery.</p>
-                    </div>
-                </li>
-            </ul>
         </div>
-
         <!-- pricing plans -->
-        <div class="pricing">
+        <div class="wrap contain center" style="background:url('./assets/pricing-bg.png')">
+            <div class="pricing">
 
-            <h2>
-                <img src="./assets/yellow-note-vertical.png" alt="yellow music note icon"> 
-                   Pricing Plans
-                <img src="./assets/16_note_double_dark_blue.png" alt="purple music note icon">
-            </h2>
+                <h2>
+                    <img src="./assets/yellow-note-vertical.png" alt="yellow music note icon"> 
+                    Pricing Plans
+                    <img src="./assets/16_note_double_dark_blue.png" alt="purple music note icon">
+                </h2>
 
-            <div class="grid grid-3" style="margin-bottom: 0;">
+                <div class="grid grid-3" style="margin-bottom: 0;">
 
-                <div class="card basic">
-                    <img src="./assets/17_teacher.png" alt="teacher">
-                    <h3>Basic</h3>
-                    <h4>$ 5 / month</h4>
-                    <p class="subtitle-2">$ 15 / 3 months</p>
-                    <ul>
-                        <li class="flex">
-                            <i class="fas fa-check-circle"></i>
-                            <p class="body4-text">Access to recent bundles</p>
-                        </li>
-                        <li class="flex">
-                            <i class="fas fa-check-circle"></i>
-                            <p class="body4-text">2 active students</p>
-                        </li>
-                        <li class="flex">
-                            <i class="fas fa-check-circle"></i>
-                            <p class="body4-text">Unlimited flashcards</p>
-                        </li>
-                        <li class="flex">
-                            <i class="fas fa-check-circle"></i>
-                            <p class="body4-text">Basic lesson reports</p>
-                        </li>
-                    </ul>
-                </div>
+                    <div class="card basic">
+                        <img src="./assets/17_teacher.png" alt="teacher">
+                        <h3>Basic</h3>
+                        <h4>$ 5 / month</h4>
+                        <p class="subtitle-2">$ 15 / 3 months</p>
+                        <ul>
+                            <li class="flex">
+                                <i class="fas fa-check-circle"></i>
+                                <p class="body4-text">Access to recent bundles</p>
+                            </li>
+                            <li class="flex">
+                                <i class="fas fa-check-circle"></i>
+                                <p class="body4-text">2 active students</p>
+                            </li>
+                            <li class="flex">
+                                <i class="fas fa-check-circle"></i>
+                                <p class="body4-text">Unlimited flashcards</p>
+                            </li>
+                            <li class="flex">
+                                <i class="fas fa-check-circle"></i>
+                                <p class="body4-text">Basic lesson reports</p>
+                            </li>
+                        </ul>
+                    </div>
 
-                <div class="card standard">
-                    <img src="./assets/Teacher.png" alt="teacher icon">
-                    <h3>Standard</h3>
-                    <h4>$ 10 / month</h4>
-                    <p class="subtitle-2">$ 25 / 3 months • $ 70 / year</p>
-                    <ul>
-                        <li class="flex">
-                            <i class="fas fa-check-circle"></i>
-                            <p class="body4-text">Access to all bundles</p>
-                        </li>
-                        <li class="flex">
-                            <i class="fas fa-check-circle"></i>
-                            <p class="body4-text">10 active students</p>
-                        </li>
-                        <li class="flex">
-                            <i class="fas fa-check-circle"></i>
-                            <p class="body4-text">10 custom cards per month</p>
-                        </li>
-                        <li class="flex">
-                            <i class="fas fa-check-circle"></i>
-                            <p class="body4-text">Online sync and backups</p>
-                        </li>
-                    </ul>
-                </div>
+                    <div class="card standard">
+                        <img src="./assets/Teacher.png" alt="teacher icon">
+                        <h3>Standard</h3>
+                        <h4>$ 10 / month</h4>
+                        <p class="subtitle-2">$ 25 / 3 months • $ 70 / year</p>
+                        <ul>
+                            <li class="flex">
+                                <i class="fas fa-check-circle"></i>
+                                <p class="body4-text">Access to all bundles</p>
+                            </li>
+                            <li class="flex">
+                                <i class="fas fa-check-circle"></i>
+                                <p class="body4-text">10 active students</p>
+                            </li>
+                            <li class="flex">
+                                <i class="fas fa-check-circle"></i>
+                                <p class="body4-text">10 custom cards per month</p>
+                            </li>
+                            <li class="flex">
+                                <i class="fas fa-check-circle"></i>
+                                <p class="body4-text">Online sync and backups</p>
+                            </li>
+                        </ul>
+                    </div>
 
-                <div class="card basic" style="margin-bottom: 0;">
-                    <img src="./assets/18_teacher_student.png" alt="teacher student">
-                    <h3>Premium</h3>
-                    <h4>$ 20 / month</h4>
-                    <p class="subtitle-2">$ 35 / 3 months</p>
-                    <ul>
-                        <li class="flex">
-                            <i class="fas fa-check-circle"></i>
-                            <p class="body4-text">Unlimited active students</p>
-                        </li>
-                        <li class="flex">
-                            <i class="fas fa-check-circle"></i>
-                            <p class="body4-text">Unlimited custom songs</p>
-                        </li>
-                        <li class="flex">
-                            <i class="fas fa-check-circle"></i>
-                            <p class="body4-text">Advanced lesson reports</p>
-                        </li>
-                        <li class="flex">
-                            <i class="fas fa-check-circle"></i>
-                            <p class="body4-text">Therapist/Parent channels</p>
-                        </li>
-                    </ul>
+                    <div class="card basic" style="margin-bottom: 0;">
+                        <img src="./assets/18_teacher_student.png" alt="teacher student">
+                        <h3>Premium</h3>
+                        <h4>$ 20 / month</h4>
+                        <p class="subtitle-2">$ 35 / 3 months</p>
+                        <ul>
+                            <li class="flex">
+                                <i class="fas fa-check-circle"></i>
+                                <p class="body4-text">Unlimited active students</p>
+                            </li>
+                            <li class="flex">
+                                <i class="fas fa-check-circle"></i>
+                                <p class="body4-text">Unlimited custom songs</p>
+                            </li>
+                            <li class="flex">
+                                <i class="fas fa-check-circle"></i>
+                                <p class="body4-text">Advanced lesson reports</p>
+                            </li>
+                            <li class="flex">
+                                <i class="fas fa-check-circle"></i>
+                                <p class="body4-text">Therapist/Parent channels</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- product roadmap DESKTOP-->
-        <div class="product-roadmap" style="height: 991px;padding: 142px 0;width:100%;max-width: 1440px;margin:0 auto;">
-            <h2 style="text-align: center;"><img src="./assets/19_bars.png" alt="yellow bars" > Product Roadmap</h2>
-            <div class="grid" style="height: unset;margin-top:86px;">
-                <img src="./assets/20g_milestone_july_21.png" alt="milestone july 2021" style="transform: translate(75px,20px);">
-                <a href=""><img src="./assets/20i_milestone_january_22.png" alt="milestone january 2022" style="transform: translate(-22px,46px);"></a>
-            </div>
-            <div style="width: 100%;">
-                <img src="./assets/20b_staff_with_notes.png" alt="notes staff" style="width:100%;">
-            </div>
-            <div class="grid" style="height: unset;justify-items: end;">
-                <img src="./assets/20h_milestone_october_21.png" alt="" style="transform: translate(-148px, -24px);">
-                <img src="./assets/20j_milestone_june_22.png" alt="" style="transform: translate(-86px, -111px);">
+        <div class="wrap cover" style="background: url('./assets/product-roadmap.png');">
+            <div class="product-roadmap" style="height: 991px;padding: 142px 0;width:100%;max-width: 1440px;margin:0 auto;">
+                <h2 style="text-align: center;"><img src="./assets/19_bars.png" alt="yellow bars" > Product Roadmap</h2>
+                <div class="grid" style="height: unset;margin-top:86px;">
+                    <img src="./assets/20g_milestone_july_21.png" alt="milestone july 2021" style="transform: translate(75px,20px);">
+                    <a href=""><img src="./assets/20i_milestone_january_22.png" alt="milestone january 2022" style="transform: translate(-22px,46px);"></a>
+                </div>
+                <div style="width: 100%;">
+                    <img src="./assets/20b_staff_with_notes.png" alt="notes staff" style="width:100%;">
+                </div>
+                <div class="grid" style="height: unset;justify-items: end;">
+                    <img src="./assets/20h_milestone_october_21.png" alt="" style="transform: translate(-148px, -24px);">
+                    <img src="./assets/20j_milestone_june_22.png" alt="" style="transform: translate(-86px, -111px);">
+                </div>
             </div>
         </div>
         <!--- product roadmap MOBILE-->
@@ -297,7 +306,8 @@
     </section>
 
     <!-- team -->
-    <section class="team" id="team">
+    <section class="team wrap contain center" id="team" style="background: url('./assets/team-bg.png');">
+ 
         <div class="container" style="position:relative;">
             <div class="header">
                 <img src="./assets/bloomelody_logo.png" style="width:89px;" alt="Bloomelody logo" class="hide-mobile">
@@ -321,7 +331,7 @@
             <li class="card grid">
                 <img src="./assets/Preston.jpg" alt="CEO Preston Peck">
                 <div class="text ceo">  
-                    <a href="#"><h4>Preston Peck</h4></a>
+                    <a href="https://www.linkedin.com/in/preston-peck/"><h4>Preston Peck</h4></a>
                     <p class="body1-text">Co-Founder & CEO</p>
                     <p class="subtitle-2">BA Computer Science</p>
                     <img src="./assets/24_note_card.png" alt="note card" class="hide-mobile">
@@ -330,7 +340,7 @@
             <li class="card grid">
                 <img src="./assets/Rafaela.jpeg" alt="Co-Founder Rafaela Villacres">
                 <div class="text coFounder">  
-                    <a href="#"><h4>Rafaela Villacres</h4></a>
+                    <a href="https://www.linkedin.com/in/rafaelavillacres/"><h4>Rafaela Villacres</h4></a>
                     <p class="body1-text">Co-Founder & PM</p>
                     <p class="subtitle-2">MS Population Health Informatics</p>
                     <img src="./assets/25_note_double_red.png" alt="red note" class="hide-mobile">
@@ -339,7 +349,7 @@
             <li class="card grid">
                 <img src="./assets/Max.jpeg" alt="Product Owner Max Inciong">
                 <div class="text productOwner">  
-                    <a href=""><h4>Max Inciong</h4></a>
+                    <a href="https://www.linkedin.com/in/max-inciong/"><h4>Max Inciong</h4></a>
                     <p class="body1-text">Product Owner</p>
                     <p class="subtitle-2">BS Computer Science</p>
                     <img src="./assets/26_note_double_blue.png" alt="blue note" class="hide-mobile">
@@ -348,7 +358,7 @@
             <li class="card grid">
                 <img src="./assets/Sebastian.png" alt="flutter engineer Sebastian Grygorczuk">
                 <div class="text flutterEngineer1">  
-                    <a href=""><h4>Sebastian Grygorczuk</h4></a>
+                    <a href="https://www.linkedin.com/in/sgrygorczuk/"><h4>Sebastian Grygorczuk</h4></a>
                     <p class="body1-text">Flutter Engineer</p>
                     <p class="subtitle-2">BE Computer Engineering</p>
                     <img src="./assets/27_note_double_green.png" alt="green note" class="hide-mobile">
@@ -357,7 +367,7 @@
             <li class="card grid">
                 <img src="./assets/Jade.jpg" alt="flutter engineer Jade Truncale">
                 <div class="text flutterEngineer2">  
-                    <a href=""><h4>Jade Truncale</h4></a>
+                    <a href="https://www.linkedin.com/in/ftruncale/"><h4>Jade Truncale</h4></a>
                     <p class="body1-text">Flutter Engineer</p>
                     <p class="subtitle-2">BS Computer Science</p>
                     <img src="./assets/28_book.png" alt="book" class="hide-mobile">
@@ -366,7 +376,7 @@
             <li class="card grid">
                 <img src="./assets/29_winnie_fix.png" alt="UX/UI Designer Winnie Chin">
                 <div class="text designer">  
-                    <a href=""><h4>Winnie Chin</h4></a>
+                    <a href="https://www.linkedin.com/in/winnie-chin/"><h4>Winnie Chin</h4></a>
                     <p class="body1-text">UX/UI Designer</p>
                     <p class="subtitle-2">BE Biomedical Engineering</p>
                     <img src="./assets/30_note_yellow.png" alt="yellow note" class="hide-mobile">
@@ -374,8 +384,7 @@
             </li>
         </ul>
         </div>
-
-        
+   
     </section>
 
    <footer class="footer" id="contact">
@@ -385,7 +394,7 @@
                 <div>
                     <img src="./assets/1_Bloomelody_logo.png" alt="Bloomelody logo" style="width:100%;max-width:279px">
                     <div>
-                            <a href="#"><img src="./assets/6_google_play.png" alt="google play logo"></a>
+                            <a href="https://play.google.com/store/apps/details?id=com.bloomelody&hl=en_US&gl=US"><img src="./assets/6_google_play.png" alt="google play logo"></a>
                             <a href="#"><img src="./assets/7_app_store.png" alt="apple store logo"></a>
                     </div>
                     <p>New York, NY</p>
@@ -395,8 +404,8 @@
                         <a href="mailto:pbclabs@photonmail.ch">pbclabs@photonmail.ch</a>
                     </div><br>
                     <div>
-                        <i class="fab fa-linkedin"></i>
-                        <i class="fab fa-youtube"></i>
+                        <a href="https://www.linkedin.com/company/pbc-labs/?viewAsMember=true"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/channel/UCtDiaixtg3Kx-Ga8Wu__7Pg"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
 
