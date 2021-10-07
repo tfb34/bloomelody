@@ -235,6 +235,11 @@ section.product{
     color: rgb(255, 255, 255) !important;
 }
 
+.bloomelody-description img{
+    width: 50%;
+    max-width: 420px;
+    margin-top: 20px;
+}
 /* pricing  */
 .pricing {
     padding-top: 4em;
@@ -468,9 +473,7 @@ footer .copyright-text{
 }
 
 .footer textarea:focus, input:focus{
-    
-        outline: 2px solid #F6BB00;
-    
+    outline: 2px solid #F6BB00;
 }
 
 /*Mobile only*/
@@ -482,6 +485,14 @@ footer .copyright-text{
     h1{
         font-size: 24px;
         line-height: 34px;
+    }
+    .showcase-text p{
+        line-height: 2em;
+    }
+    /*product*/
+    .product .container {
+        padding-top: 60px;
+        padding-bottom: 40px;
     }
     /* pricing */
     .pricing .card{
@@ -504,6 +515,13 @@ footer .copyright-text{
     .team .card.grid{
         margin-top: 5em;
     }
+    .bloomelody-description img:nth-child(1){
+        width:100%;max-width:317px;
+    }
+    .bloomelody-description img:nth-child(2){
+        width:100%;max-width:420px;margin-top:40px;
+    }
+
 }
 
 @media only screen and (max-width: 1023px){

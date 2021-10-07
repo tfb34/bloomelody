@@ -1,3 +1,7 @@
+document.onreadystatechange = function() {
+  console.log("ready")
+}
+
 function toggle(el){
 	el.classList.toggle("hide")
 }
