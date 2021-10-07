@@ -301,6 +301,7 @@ section.product{
 }
 .product-roadmap-mobile {
     padding-top:100px;
+    padding: 100px 1em 0 1em;
 }
 .product-roadmap h2,
 .product-roadmap-mobile h2{
@@ -352,7 +353,6 @@ section.product{
     padding: 0;
     align-items: center;
     gap: 1em;
-    margin-top: 5em;
     height: 100%;
     max-height: 140px;
 }
@@ -382,8 +382,6 @@ section.product{
     position: absolute;
     bottom: 0;
     right: 0;
-    /* transform: rotate(12deg) translate(31px,22px);
-    -webkit-transform: rotate(12deg) translate(31px,22px); */
 }
 .team .text.ceo img{
     transform: translate(26px,40px);
@@ -485,11 +483,16 @@ footer .copyright-text{
         font-size: 24px;
         line-height: 34px;
     }
+    /* pricing */
+    .pricing .card{
+        width:85%;
+    }
     .team{
         padding:1em 0
     }
     .team .container{
-        padding:90px 0;
+        padding-top:90px;
+        padding-bottom: 90px;
     }
 }
 
@@ -497,6 +500,9 @@ footer .copyright-text{
 @media only screen and (min-width: 768px){
     .team .description span:nth-child(2){
         display: none;
+    }
+    .team .card.grid{
+        margin-top: 5em;
     }
 }
 
